@@ -14,7 +14,8 @@ public class StockManageMain {
                     "Press 2 To Display Stocks\n" +
                     "Press 3 To Debit Amount\n" +
                     "Press 4 To Buy Stocks" +
-                    "\nPress 5 To Exit");
+                    "\nPress 5 For Purchase History" +
+                    "\nPress 6 To Exit");
 
             input = sc.nextInt();
 
@@ -66,6 +67,11 @@ public class StockManageMain {
                 }
 
                 case 5:{
+                    stocks.purchaseHistory();
+                    break;
+                }
+
+                case 6:{
 
                     System.out.println(" || Application Closed || ");
                 }
@@ -74,6 +80,6 @@ public class StockManageMain {
                     System.out.println("Enter Correct Input Choice");
                 }
             }
-        }while (input != 5);
+        }while (input != 6);
     }
 }

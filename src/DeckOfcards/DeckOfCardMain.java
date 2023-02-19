@@ -23,7 +23,7 @@ public class DeckOfCardMain {
 
         newDeck = deck;
         for (int i = 1; i < 5; i++) {
-            System.out.println("Player --->>> " + i);
+            System.out.println(" Player --->>> " + i);
             for (int j = 1; j < 10; j++) {
                 selectCard();
             }
